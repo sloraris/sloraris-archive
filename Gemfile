@@ -1,6 +1,12 @@
 source "https://rubygems.org"
-gemspec
-gem "webrick", "~> 1.8"
 
-gem "github-pages", group: :jekyll_plugins
-gem "jekyll-include-cache", group: : jekyll_plugins
+gem "webrick", "~> 1.8"
+gem "jekyll"
+gem "github-pages"
+gem "jekyll-paginate"
+gem "jekyll-sitemap"
+gem "jekyll-feed"
+gem "jekyll-include-cache"
+
+group :jekyll_plugins do
+end
