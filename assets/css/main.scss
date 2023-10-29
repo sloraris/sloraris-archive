@@ -9,10 +9,46 @@ search: true
 @import "minimal-mistakes"; // main partials
 
 
-// test background header
+// masthead background image
 .masthead {  /* or #masthead, depending on what you found */
     background-image: url('../img/jr-korpa-9XngoIpxcEo-unsplash.jpg');
     background-size: cover;
     background-position: center;
   }
-  
+
+/* 
+========================================
+Custom Animation for Text and Arrows
+========================================
+*/
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text, .arrow {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.arrow {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+}
+
+@keyframes wave {
+  0%, 100% {
+      transform: scaleX(1);
+  }
+  25% {
+      transform: scaleX(1.2);
+  }
+  50% {
+      transform: scaleX(1);
+  }
+  75% {
+      transform: scaleX(0.8);
+  }
+}
