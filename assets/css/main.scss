@@ -24,8 +24,8 @@ search: true
     right: 0;
     bottom: 0;
     background: url('/assets/img/slo-binary-white.svg') no-repeat center center;
-    background-size: cover; /* This will make sure the image is contained within the viewport */
-    opacity: 0.1; /* Adjust for desired transparency */
+    background-size: contain; /* This will make sure the image is contained within the viewport */
+    opacity: 0.05; /* Adjust for desired transparency */
     z-index: -1; /* Ensures the overlay is behind the content */
     pointer-events: none; /* Allows clicking through the overlay */
 }
