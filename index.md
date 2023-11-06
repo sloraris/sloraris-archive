@@ -1,7 +1,12 @@
 ---
 layout: splash
-title: home
+title: " "
+header:
+    overlay_image: "/assets/img/daniel-korpai-unsplash.jpg"
+excerpt: A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.
 ---
+
+
 # Welcome to Sloraris:Archive
 
 **Your ultimate hub for homelab adventures and tech troubleshooting chronicles.**
