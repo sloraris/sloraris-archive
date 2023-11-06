@@ -1,5 +1,5 @@
 ---
-//# Only the main Sass file needs front matter (the dashes are enough)
+# Only the main Sass file needs front matter (the dashes are enough)
 search: false
 ---
 
@@ -9,23 +9,24 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 
-// test background header
+// masthead background header
 .masthead {  /* or #masthead, depending on what you found */
     background-image: url('../img/jr-korpa-9XngoIpxcEo-unsplash.jpg');
     background-size: cover;
     background-position: center;
   }
   
-  body::before {
-    content: '';
-    position: fixed; /* or absolute, depending on your layout */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('/assets/img/slo-binary-white.svg') no-repeat center center;
-    background-size: contain; /* This will make sure the image is contained within the viewport */
-    opacity: 0.05; /* Adjust for desired transparency */
-    z-index: -1; /* Ensures the overlay is behind the content */
-    pointer-events: none; /* Allows clicking through the overlay */
+// set background to binary logo  
+body::before {
+  content: '';
+  position: fixed; /* or absolute, depending on your layout */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/assets/img/slo-binary-white.svg') no-repeat center center;
+  background-size: contain; /* This will make sure the image is contained within the viewport */
+  opacity: 0.05; /* Adjust for desired transparency */
+  z-index: -1; /* Ensures the overlay is behind the content */
+  pointer-events: none; /* Allows clicking through the overlay */
 }
