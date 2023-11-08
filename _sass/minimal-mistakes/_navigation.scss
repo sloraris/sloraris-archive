@@ -177,7 +177,7 @@
   -ms-flex-align: center;
   align-items: center;
   min-height: $nav-height;
-  background: transparent;
+  background: transparent; // change this to allow masthead background to show through
 
   a {
     display: block;
