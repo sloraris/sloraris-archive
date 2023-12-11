@@ -156,6 +156,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - node_modules # changed from 'exclude' to 'include' to install dracula-ui
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -175,7 +176,6 @@ exclude:
   - gulpfile.js
   - LICENSE
   - log
-  - node_modules
   - package.json
   - package-lock.json
   - Rakefile
