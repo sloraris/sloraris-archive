@@ -50,10 +50,16 @@ Start by styling basic elements:
 - Box model: `margin`, `border`, `padding`
 - Layout: `display`, `position`
 
+- Code snippet test: `number = 22`
+
 Example:
 
 ```css
-h1 {
+/* comment */
+
+string = "string"
+
+.h1 {
   color: blue;
   text-align: center;
 }
@@ -61,6 +67,11 @@ h1 {
 p {
   font-size: 16px;
 }
+
+@keyframes animatedGradient {
+  0% {
+      background-position: 0 50%
+  }
 ```
 
 ## Step 4: Advanced Concepts

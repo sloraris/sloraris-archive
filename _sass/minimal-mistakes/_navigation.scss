@@ -181,15 +181,13 @@
 
   a {
     display: block;
-    margin: 0 1rem;
+    margin: 6px;
     color: $masthead-link-color;
     text-decoration: none;
     -webkit-transition: none;
     transition: none;
 
-    &:hover {
-      color: $masthead-link-color-hover;
-    }
+
 
     &.site-logo {
       margin-left: 0;
@@ -235,27 +233,22 @@
     }
 
     a {
-      position: relative;
+      display: inline-block; // Make it similar to a button
+      padding: 0.5em 1em; // Adjust padding to your preference
+      background-color: var(--purple);
+      border: var(--btn-border-size) solid var(--purple);
+      border-radius: var(--rounded-lg); // Optional: rounded corners
+      text-transform: uppercase; // Dracula badge style
+      transition: all .16s ease-in-out; // Smooth transition for hover effect
+    }
 
-      &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 4px;
-        background: $primary-color;
-        width: 100%;
-        -webkit-transition: $global-transition;
-        transition: $global-transition;
-        -webkit-transform: scaleX(0) translate3d(0, 0, 0);
-        transform: scaleX(0) translate3d(0, 0, 0); // hide
-      }
-
-      &:hover:before {
-        -webkit-transform: scaleX(1);
-        -ms-transform: scaleX(1);
-        transform: scaleX(1); // reveal
-      }
+    a:hover {
+      // color: var(--purple);
+      // background-color: var(--purple-transparent);
+      // border-color: var(--purple);
+      animation: animatedGradient 8s ease infinite alternate;
+      background-image: linear-gradient(var(--gradientDegree), var(--orange), var(--yellow), var(--red), var(--pink), var(--purple), var(--cyan), var(--green));
+      background-size: 500% 500%;
     }
   }
 

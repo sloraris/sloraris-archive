@@ -7,9 +7,7 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-@import "slo-logo";
-
-@import "../../node_modules/dracula-ui/styles/dracula-ui.css"; // import dracula UI
+// @import "../../node_modules/dracula-ui/styles/dracula-ui.css"; // import dracula UI
 
 
 // masthead background image

@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "sloraris"
-  avatar           : "/assets/img/slo-type.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/img/sloraris.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Breaking stuff since 1998"
   location         : "Northern Utah"
   email            :
