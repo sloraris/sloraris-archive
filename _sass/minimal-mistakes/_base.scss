@@ -147,13 +147,17 @@ button:focus {
 }
 
 /* code */
-
+// applies before
 tt,
 code,
 kbd,
 samp,
 pre {
-  font-family: $monospace;
+  background: $code-background-color; // code background color
+  border-radius: var(--rounded-sm);
+  color: var(--purple-900);
+  font-family: Fira Code, monospace;
+  padding: .1rem .3rem
 }
 
 pre {

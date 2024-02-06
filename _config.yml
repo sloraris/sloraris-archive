@@ -18,11 +18,11 @@ minimal_mistakes_skin    : "slo" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "en-US"
 title                    : "sloraris:archive"
 title_separator          : "-"
-subtitle                 :  # site tagline that appears below site title in masthead
+subtitle                 : # site tagline that appears below site title in masthead
 name                     : "sloraris"
 description              : "Writing things down so I don't have to Google them again"
 url                      : "https://archive.sloraris.dev" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : /assets/img/slorarisarchive-white.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -105,9 +105,9 @@ analytics:
 # Site Author
 author:
   name             : "sloraris"
-  avatar           : "/assets/img/slo-type.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  avatar           : "/assets/img/sloraris.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Breaking stuff since 1998"
+  location         : "Northern Utah"
   email            :
   links:
     - label: "Email"
@@ -156,6 +156,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - node_modules # changed from 'exclude' to 'include' to install dracula-ui
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -175,7 +176,6 @@ exclude:
   - gulpfile.js
   - LICENSE
   - log
-  - node_modules
   - package.json
   - package-lock.json
   - Rakefile
@@ -284,19 +284,10 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: splash
       permalink: "/:year/:month/:title/"
       author_profile: true
       read_time: false
       comments: false
       share: true
       related: true
-
-defaults:
-  # _pages
-  - scope:
-      path: "/:title/"
-      type: pages
-    values:
-      layout: splash
-      author_profile: true

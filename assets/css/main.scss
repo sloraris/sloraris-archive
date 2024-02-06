@@ -1,6 +1,5 @@
 ---
-//# Only the main Sass file needs front matter (the dashes are enough)
-search: true
+search: false
 ---
 
 @charset "utf-8";
@@ -8,11 +7,32 @@ search: true
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+// @import "../../node_modules/dracula-ui/styles/dracula-ui.css"; // import dracula UI
 
-// test background header
-.masthead {  /* or #masthead, depending on what you found */
-    background-image: url('../img/jr-korpa-9XngoIpxcEo-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-  }
+
+// masthead background image
+// .masthead {
+//     background-image: url('../img/purple-marble.jpg');
+//     background-size: cover;
+//     background-position: center bottom;
+//   }
   
+// set background to binary logo  
+// body::before {
+//   content: '';
+//   position: fixed; /* or absolute, depending on your layout */
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background: url('/assets/img/slo-binary-white.svg') no-repeat center center;
+//   background-size: contain; /* This will make sure the image is contained within the viewport */
+//   opacity: 0.05; /* Adjust for desired transparency */
+//   z-index: -1; /* Ensures the overlay is behind the content */
+//   pointer-events: none; /* Allows clicking through the overlay */
+// }
+
+// body {
+//   overflow: hidden;
+// }
+
